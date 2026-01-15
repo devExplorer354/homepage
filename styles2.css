@@ -1,9 +1,9 @@
 body {
 	display: flex;
-	flex-direction: column; 
-	align-items: center; 
-	justify-content: center; 
-	min-height: 100vh; 
+	flex-direction: column; /* optional */
+	align-items: center; /* horizontal centering */
+	justify-content: center; /* vertical centering if desired */
+	min-height: 100vh; /* ensures vertical centering works */
 }
 
 *,
@@ -16,11 +16,11 @@ body {
 }
 
 .header-background-color {
-	background-color: rgb(14, 173, 212);
-	width: 100%;
-	height: 25%;
+	background-color: rgb(206, 149, 27);
+	width: 110%;
+	height: 90%;
 	position: absolute;
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+	/* top: -20%; */
 	clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
 	z-index: -1;
 }
@@ -40,12 +40,12 @@ body {
 	flex-direction: column;
 	justify-content: left;
 	position: absolute;
-	top: 17%;
-	left: 50%;
+	top: 73%;
+	left: 33%;
 }
 
 .header-image {
-	width: 90%;
+	width: 40%;
 	margin-top: 5%;
 }
 
@@ -68,7 +68,8 @@ article {
 
 p {
 	width: 100%;
-	font-size: 1.5rem;
+	/* padding-left: 1rem; */
+	/* padding-right: 1rem; */
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
@@ -86,6 +87,7 @@ h3 {
 
 .project {
 	margin: 2.5rem 2.5rem 0;
+	/* flex-grow: 1; */
 }
 
 .aboutme,
@@ -94,6 +96,7 @@ h3 {
 }
 
 .content-wrapper,
+/* .aboutme, */
 .contactme,
 .mywork,
 .projects-container,
@@ -105,12 +108,10 @@ h3 {
 
 .aboutme {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .my-firstname {
-	font-size: 3rem;
+	font-size: 7rem;
 	font-weight: bold;
 	text-shadow: 2px 2px 0 black;
 	padding: 2px;
@@ -118,7 +119,7 @@ h3 {
 }
 
 .my-secondname {
-	font-size: 3rem;
+	font-size: 7rem;
 	font-weight: bold;
 	text-shadow: 2px 2px 0 black;
 	padding: 2px;
@@ -127,16 +128,19 @@ h3 {
 
 .contactme {
 	color: white;
-	background-color: rgb(14, 173, 212);
+	background-color: rgb(206, 149, 27);
 }
 
 .aboutme-flex-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	margin-top: 8%;
+	margin-bottom: 3%;
 	background-color: white;
-	width: 100%;
+	width: 50%;
+	height: 60%;
+}
+
+.header-image {
+	margin-left: 5%;
 }
 
 .image-1 {
@@ -165,12 +169,10 @@ h3 {
 
 .about-me-heading,
 .contact-me-heading {
-	margin-top: 5%;
+	margin-top: 1.5rem;
 	margin-bottom: 0.8rem;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
-	margin-top: 3rem;
-	font-size: 2.5rem; /*wsa 3at full size*/
 }
 
 .icon {
@@ -179,10 +181,10 @@ h3 {
 
 .icon-box-top {
 	display: flex;
+	margin-left: 2rem;
 	width: 90%;
-	justify-content: center;
-	margin-top: 2%;
-	margin-bottom: 5%;
+	justify-content: end;
+	margin-top: 1rem;
 }
 
 .middle-icon {
@@ -191,32 +193,33 @@ h3 {
 }
 
 .icon-box-bottom {
-	margin-top: 2%;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.aboutme-flex-container {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-me-text,
 .contact-me-text {
-	font-size: 1.6rem;
-	margin-left: 0.9rem;
-	margin-right: 0.9rem;
+	font-size: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 	width: 90%;
+	/* background-color: pink; */
+}
+
+/* .icon-box-top
+{background-color: green;} */
+
+.about-me-heading {
+	font-size: 3rem;
 }
 
 .image-aboutme-flex-container {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	/* background-color: blueviolet; */
 }
-
-.project-info {
-	width: 90%;
-}
-
-.content-wrapper {
-	width: 100vw;
-}
-
-
-
-
