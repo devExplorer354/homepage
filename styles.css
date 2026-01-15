@@ -1,9 +1,9 @@
 body {
 	display: flex;
-	flex-direction: column; 
-	align-items: center; 
-	justify-content: center; 
-	min-height: 100vh; 
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
 *,
@@ -12,9 +12,9 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: ;
 }
 
+/* Mobile first (base) */
 .header-background-color {
 	background-color: rgb(14, 173, 212);
 	width: 100%;
@@ -170,7 +170,7 @@ h3 {
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 	margin-top: 3rem;
-	font-size: 2.5rem; /*wsa 3at full size*/
+	font-size: 2.5rem;
 }
 
 .icon {
@@ -207,6 +207,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/* border: 2px solid red */
 }
 
 .project-info {
@@ -217,6 +218,55 @@ h3 {
 	width: 100vw;
 }
 
+/* Tablet 768px*/
+@media (min-width: 768px) {
+	.image-aboutme-flex-container {
+		gap: 2rem;
+	}
 
+	.about-me-heading {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
+	.about-me-text {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.header-background-color {
+		height: 45%;
+	}
+
+	.myname {
+		top: 47%;
+		left: 72%;
+	}
+}
+
+/* Tablet 768px*/
+@media (min-width: 768px) {
+	.image-aboutme-flex-container {
+		gap: 2rem;
+	}
+
+	.about-me-heading {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.about-me-text {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.header-background-color {
+		height: 45%;
+	}
+
+	.myname {
+		top: 47%;
+		left: 72%;
+	}
+}
 
